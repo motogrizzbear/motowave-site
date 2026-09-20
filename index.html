@@ -4,139 +4,148 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="MotoWave is a free iPhone app for discovering and listening to internet radio stations around the world. No account, no ads, no tracking.">
-  <meta name="theme-color" content="#f7f7f5">
+  <meta name="theme-color" content="#11110f">
   <link rel="icon" href="./assets/favicon.png" type="image/png">
   <title>MotoWave — Internet radio for iPhone</title>
-  <script>
-    (() => {
-      try {
-        const theme = localStorage.getItem("motowave-theme");
-        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
-      } catch {}
-    })();
-  </script>
   <link rel="stylesheet" href="./assets/site.css">
-  <script defer src="./assets/theme.js"></script>
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="shell nav-wrap">
-      <a class="brand" href="./" aria-label="MotoWave home">
-        <span class="brand-mark" aria-hidden="true">M</span>
-        <span>MotoWave</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="./support/">Help &amp; Support</a>
+
+  <header class="home-header">
+    <div class="home-shell home-nav">
+      <a class="home-brand" href="./" aria-label="MotoWave home">MotoWave</a>
+      <nav aria-label="Primary navigation">
+        <a href="./support/">Support</a>
         <a href="./privacy/">Privacy</a>
-        <button class="theme-toggle" type="button" aria-label="Theme: System. Switch to light theme.">◐ System</button>
-        <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+        <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Coffee</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow">Free. No account. No ads.</p>
-        <h1>Internet radio, without the extra stuff.</h1>
-        <p class="lede">Find live stations from around the world, save the ones you like, see what played, and listen with the controls already on your iPhone.</p>
-        <div class="cta-row">
-          <a class="button button-primary" href="#features">See what it does</a>
-          <a class="button button-secondary" href="./support/">Help &amp; Support</a>
-          <a class="button button-secondary" href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
-        </div>
-      </div>
-      <div class="hero-device" aria-label="MotoWave app preview">
-        <img src="./assets/screenshots/motowave-iphone-01.png" alt="MotoWave iPhone app screenshot">
-      </div>
-    </section>
-
-    <section id="features" class="section shell" aria-labelledby="features-heading">
-      <div class="section-heading">
-        <p class="eyebrow">What MotoWave does</p>
-        <h2 id="features-heading">Radio first. Everything else stays out of the way.</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <span class="feature-number" aria-hidden="true">01</span>
-          <h3>Find stations</h3>
-          <p>Browse popular and recommended stations or search by name, country, language, and genre.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-number" aria-hidden="true">02</span>
-          <h3>Keep your favorites</h3>
-          <p>Save stations for quick access and use listening history to get back to something you heard earlier.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-number" aria-hidden="true">03</span>
-          <h3>Keep listening</h3>
-          <p>Use background and Lock Screen controls, widgets, AirPlay, Google Cast, and a sleep timer.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-number" aria-hidden="true">04</span>
-          <h3>Private by default</h3>
-          <p>No MotoWave account, ads, analytics SDK, tracking, or MotoWave backend. Favorites and history stay on your device.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="shell">
-        <div class="section-heading compact">
-          <p class="eyebrow">Inside MotoWave</p>
-          <h2>That’s basically it.</h2>
-        </div>
-        <div class="screenshot-grid" role="list" aria-label="MotoWave iPhone screenshots">
-          <figure role="listitem"><img src="./assets/screenshots/motowave-iphone-01.png" alt="MotoWave iPhone app screen 1 of 5" loading="lazy"></figure>
-          <figure role="listitem"><img src="./assets/screenshots/motowave-iphone-02.png" alt="MotoWave iPhone app screen 2 of 5" loading="lazy"></figure>
-          <figure role="listitem"><img src="./assets/screenshots/motowave-iphone-03.png" alt="MotoWave iPhone app screen 3 of 5" loading="lazy"></figure>
-          <figure role="listitem"><img src="./assets/screenshots/motowave-iphone-04.png" alt="MotoWave iPhone app screen 4 of 5" loading="lazy"></figure>
-          <figure role="listitem"><img src="./assets/screenshots/motowave-iphone-05.png" alt="MotoWave iPhone app screen 5 of 5" loading="lazy"></figure>
+    <section class="home-hero">
+      <div class="home-shell">
+        <p class="home-kicker">Internet radio / iPhone</p>
+        <h1>Internet radio.<br>That’s it.</h1>
+        <div class="home-intro-row">
+          <p>Find live stations from around the world, save the ones you like, and keep listening with the controls already on your iPhone.</p>
+          <div class="home-links">
+            <a href="#screens">See the app ↓</a>
+            <a href="./support/">Help &amp; Support →</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section shell">
-      <div class="split">
+    <section id="screens" class="screen-stage" aria-label="MotoWave app preview">
+      <div class="home-shell">
+        <div class="screen-stack" role="list" aria-label="MotoWave iPhone screenshots">
+          <figure class="screen screen-left" role="listitem">
+            <img src="./assets/screenshots/motowave-iphone-02.png" alt="MotoWave station browsing screen" loading="eager">
+          </figure>
+          <figure class="screen screen-center" role="listitem">
+            <img src="./assets/screenshots/motowave-iphone-01.png" alt="MotoWave iPhone app home screen" loading="eager">
+          </figure>
+          <figure class="screen screen-right" role="listitem">
+            <img src="./assets/screenshots/motowave-iphone-03.png" alt="MotoWave radio playback screen" loading="eager">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="home-ledger">
+      <div class="home-shell">
+        <div class="ledger-heading">
+          <p class="home-kicker">What it does</p>
+          <h2>Radio first.</h2>
+        </div>
+
+        <div class="feature-ledger">
+          <article>
+            <span aria-hidden="true">01</span>
+            <h3>Find stations</h3>
+            <p>Browse popular stations or search by name, country, language, and genre.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">02</span>
+            <h3>Keep favorites</h3>
+            <p>Save stations you want to come back to and use listening history to find something you heard earlier.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">03</span>
+            <h3>Keep listening</h3>
+            <p>Background playback, Lock Screen controls, widgets, AirPlay, Google Cast, and a sleep timer.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">04</span>
+            <h3>Stay private</h3>
+            <p>No MotoWave account, ads, analytics SDK, tracking, or MotoWave backend. Favorites and history stay on your device.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="listening-section">
+      <div class="home-shell listening-grid">
+        <div class="listening-copy">
+          <p class="home-kicker">On your phone</p>
+          <h2>Browse. Play. Move on.</h2>
+          <p>MotoWave stays focused on the station you want to hear instead of turning radio into another feed.</p>
+        </div>
+        <div class="detail-screens" role="list" aria-label="More MotoWave screenshots">
+          <figure role="listitem">
+            <img src="./assets/screenshots/motowave-iphone-04.png" alt="MotoWave iPhone app screen 4 of 5" loading="lazy">
+          </figure>
+          <figure role="listitem">
+            <img src="./assets/screenshots/motowave-iphone-05.png" alt="MotoWave iPhone app screen 5 of 5" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="MotoWave principles">
+      <div class="home-shell">
+        <span>Free</span>
+        <span>No account</span>
+        <span>No ads</span>
+        <span>No tracking</span>
+      </div>
+    </section>
+
+    <section class="home-origin">
+      <div class="home-shell origin-grid">
         <div>
-          <p class="eyebrow">A few answers</p>
-          <h2>Simple app, simple policy.</h2>
+          <p class="home-kicker">Origin</p>
+          <h2>Built from Shortwave.</h2>
         </div>
-        <div class="prose-short">
-          <h3>How much does it cost?</h3>
-          <p>Nothing. MotoWave is free. If you like it, you can <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">buy me a coffee</a>, but it does not unlock anything.</p>
-
-          <h3>Where does my data go?</h3>
-          <p>Your favorites, listening history, caches, and settings stay on your device. Station searches and playback still contact the public radio directory and station servers needed to make the app work. See the <a href="./privacy/">privacy policy</a> for details.</p>
-
-          <h3>Why does a station sometimes fail?</h3>
-          <p>MotoWave plays streams provided by independent stations. Stations can go offline, change stream addresses, or have temporary network problems.</p>
+        <div class="origin-copy">
+          <p>MotoWave started as an iPhone port of <a href="https://apps.gnome.org/Shortwave/" target="_blank" rel="noopener noreferrer">GNOME Shortwave</a>, the internet-radio app for the GNOME desktop. MotoWave keeps a Rust core derived from that project and adapts the experience for SwiftUI and iPhone.</p>
+          <p>Station discovery is powered by the public Radio Browser directory.</p>
         </div>
       </div>
     </section>
 
-    <section class="section shell">
-      <div class="callout">
+    <section class="home-end">
+      <div class="home-shell end-grid">
+        <p>Need help or found something broken?</p>
         <div>
-          <p class="eyebrow">Need a hand?</p>
-          <h2>Something not working?</h2>
-          <p>Check the short support guide or email motowave@motobear.dev.</p>
+          <a href="./support/">Support</a>
+          <a href="mailto:motowave@motobear.dev">Email</a>
+          <a href="https://github.com/motogrizzbear/motowave-site/issues/new" target="_blank" rel="noopener noreferrer">Cut an issue</a>
+          <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
         </div>
-        <a class="button button-primary" href="./support/">Open Help &amp; Support</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-wrap">
-      <p>MotoWave is made by Ahmad in New York.</p>
+  <footer class="home-footer">
+    <div class="home-shell">
+      <p>MotoWave · Made by Ahmad in New York.</p>
       <nav aria-label="Footer navigation">
-        <a href="./support/">Help &amp; Support</a>
         <a href="./privacy/">Privacy</a>
+        <a href="./support/">Support</a>
         <a href="https://github.com/motogrizzbear/motowave-site" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
       </nav>
     </div>
   </footer>

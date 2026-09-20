@@ -2,6 +2,8 @@
 
 Public product, support, and privacy site for **MotoWave**, the iPhone internet-radio app.
 
+MotoWave is an iPhone port of [GNOME Shortwave](https://apps.gnome.org/Shortwave/), adapted with a Rust core, UniFFI bridge, and SwiftUI frontend.
+
 The application source stays in the separate private `motogrizzbear/motowave` repository. This repository intentionally contains only public-facing website copy, screenshots, and static assets.
 
 ## Structure
