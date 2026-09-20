@@ -212,10 +212,10 @@ h1, h2, h3 {
 }
 h1 {
   margin-bottom: 22px;
-  font-size: clamp(2.8rem, 6.5vw, 5.7rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   max-width: 13ch;
 }
-h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+h2 { font-size: clamp(1.8rem, 3.2vw, 2.8rem); }
 h3 { font-size: 1.2rem; }
 .lede {
   max-width: 62ch;
@@ -359,7 +359,7 @@ h3 { font-size: 1.2rem; }
   padding-top: clamp(58px, 8vw, 92px);
   padding-bottom: 48px;
 }
-.docs-hero h1 { max-width: none; font-size: clamp(2.6rem, 6vw, 4.8rem); }
+.docs-hero h1 { max-width: none; font-size: clamp(2.4rem, 4.8vw, 4rem); }
 .updated { margin-top: 20px; color: var(--muted); font-size: 0.9rem; }
 
 .docs-layout {
@@ -395,7 +395,7 @@ h3 { font-size: 1.2rem; }
 }
 .docs-content h2,
 .policy h2 {
-  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
   margin-bottom: 16px;
 }
 .docs-content h3 { margin: 26px 0 8px; font-size: 1.06rem; letter-spacing: -0.015em; }
@@ -502,12 +502,12 @@ h3 { font-size: 1.2rem; }
 /* -------------------------------------------------------------------------- */
 
 .home {
-  --home-bg: #11110f;
-  --home-surface: #191814;
-  --home-text: #f4f0e9;
-  --home-muted: #aaa298;
-  --home-line: #3c3730;
-  --home-accent: #ef7622;
+  --home-bg: var(--bg);
+  --home-surface: var(--surface-soft);
+  --home-text: var(--text);
+  --home-muted: var(--muted);
+  --home-line: var(--line);
+  --home-accent: var(--accent);
   margin: 0;
   background: var(--home-bg);
   color: var(--home-text);
@@ -589,7 +589,7 @@ h3 { font-size: 1.2rem; }
 .home-hero h1 {
   max-width: none;
   margin: 0;
-  font-size: clamp(4rem, 11vw, 9.4rem);
+  font-size: clamp(3rem, 7.5vw, 6.4rem);
   line-height: 0.88;
   letter-spacing: -0.065em;
   font-weight: 820;
@@ -609,7 +609,7 @@ h3 { font-size: 1.2rem; }
   max-width: 650px;
   margin: 0;
   color: var(--home-muted);
-  font-size: clamp(1.08rem, 2vw, 1.35rem);
+  font-size: clamp(1.02rem, 1.6vw, 1.2rem);
 }
 
 .home-links {
@@ -647,9 +647,9 @@ h3 { font-size: 1.2rem; }
 .screen img,
 .detail-screens img {
   width: 100%;
-  border: 1px solid #312d27;
+  border: 1px solid var(--home-line);
   border-radius: 28px;
-  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.38);
+  box-shadow: var(--shadow);
 }
 
 .screen-left {
@@ -688,7 +688,7 @@ h3 { font-size: 1.2rem; }
 .home-origin h2 {
   margin: 0;
   color: var(--home-text);
-  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   line-height: 0.95;
   letter-spacing: -0.055em;
 }
@@ -879,7 +879,7 @@ h3 { font-size: 1.2rem; }
   }
 
   .home-hero h1 {
-    font-size: clamp(3.6rem, 18vw, 6.2rem);
+    font-size: clamp(3rem, 15vw, 4.8rem);
   }
 
   .screen-stack {
