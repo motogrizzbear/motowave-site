@@ -14,13 +14,15 @@ motowave-site/
 ├── privacy/
 │   └── index.html
 ├── assets/
+│   ├── favicon.png
 │   ├── site.css
-│   └── theme.js
-├── IMG_3014.PNG
-├── IMG_3015.PNG
-├── IMG_3016.PNG
-├── IMG_3017.PNG
-├── IMG_3018.PNG
+│   ├── theme.js
+│   └── screenshots/
+│       ├── motowave-iphone-01.png
+│       ├── motowave-iphone-02.png
+│       ├── motowave-iphone-03.png
+│       ├── motowave-iphone-04.png
+│       └── motowave-iphone-05.png
 ├── 404.html
 └── .nojekyll
 ```
