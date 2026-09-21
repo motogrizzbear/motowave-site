@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help and support for MotoWave internet radio on iPhone.">
+  <meta name="theme-color" content="#f7f7f5">
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <title>Help & Support — MotoWave</title>
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem("motowave-theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="../" aria-label="MotoWave home"><span class="brand-mark" aria-hidden="true">M</span><span>MotoWave</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Help &amp; Support</a>
+        <a href="../privacy/">Privacy</a>
+        <button class="theme-toggle" type="button" aria-label="Theme: System. Switch to light theme.">◐ System</button>
+        <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="docs-main">
+    <section class="docs-hero shell">
+      <p class="eyebrow">Help &amp; Support</p>
+      <h1>Using MotoWave</h1>
+      <p class="lede">A short guide to finding stations, playback, favorites, history, casting, and common problems.</p>
+    </section>
+
+    <div class="docs-layout shell">
+      <nav class="docs-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <a href="#getting-started">Getting started</a>
+        <a href="#playback">Playback</a>
+        <a href="#library-history">Favorites &amp; history</a>
+        <a href="#airplay-cast">AirPlay &amp; Cast</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <article class="docs-content">
+        <section id="getting-started">
+          <h2>Getting started</h2>
+          <p>Use Discover to browse stations or search by name, country, language, and genre. Tap a station to start playback.</p>
+          <p>Save stations you want to keep around as favorites so they are easy to find again.</p>
+        </section>
+
+        <section id="playback">
+          <h2>Playback</h2>
+          <p>MotoWave supports background playback and iOS Lock Screen and Control Center controls. The app can also show current playback through its widgets.</p>
+          <p>The sleep timer stops playback after the duration you choose.</p>
+          <div class="note"><strong>Station availability is outside MotoWave’s control.</strong> Internet radio streams are run by independent stations and can move, go offline, or temporarily fail.</div>
+        </section>
+
+        <section id="library-history">
+          <h2>Favorites and history</h2>
+          <p>Favorites are stored on your device. Listening history helps you return to recently played stations and see song metadata when a station provides it.</p>
+          <p>You can clear song history and cached station or artwork data from Settings.</p>
+        </section>
+
+        <section id="airplay-cast">
+          <h2>AirPlay and Google Cast</h2>
+          <p>Use AirPlay to send audio to compatible Apple devices and speakers. Use the Cast button for Chromecast, Google TV, and other supported Google Cast receivers.</p>
+          <p>Google Cast discovery needs Local Network access so MotoWave can find devices on your network. MotoWave does not request microphone or Bluetooth access for Cast.</p>
+        </section>
+
+        <section id="troubleshooting">
+          <h2>Troubleshooting</h2>
+
+          <h3>A station will not play</h3>
+          <ol>
+            <li>Try another station to confirm your network connection is working.</li>
+            <li>Try the station again a little later.</li>
+            <li>If only one station fails consistently, the station’s stream may be offline or outdated.</li>
+          </ol>
+
+          <h3>A Cast device does not appear</h3>
+          <p>Confirm the iPhone and Cast device are on the same local network and that MotoWave has Local Network permission in iOS Settings.</p>
+
+          <h3>Now-playing information looks stale</h3>
+          <p>Station metadata is supplied by the stream. Some stations update it slowly or do not provide song information at all.</p>
+
+          <h3>The app still looks stuck</h3>
+          <p>Force-quit MotoWave and reopen it. If the problem continues, include the station name, app version, iOS version, and device model when contacting support.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Email <a href="mailto:motowave@motobear.dev">motowave@motobear.dev</a> for private support.</p>
+          <p>If you operate a station or represent a rights holder and need a listing corrected or removed, email the same address with the station name, stream URL, and requested change.</p>
+          <p>You can also browse the <a href="https://github.com/motogrizzbear/motowave-site" target="_blank" rel="noopener noreferrer">public site repository</a> or <a href="https://github.com/motogrizzbear/motowave-site/issues/new" target="_blank" rel="noopener noreferrer">cut an issue</a> for a non-sensitive bug or website problem.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-wrap">
+      <p>© 2026 MotoWave.</p>
+      <nav aria-label="Footer navigation">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="https://buymeacoffee.com/motobear" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

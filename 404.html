@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f7f7f5">
+  <link rel="icon" href="/motowave-site/assets/favicon.png" type="image/png">
+  <title>Page not found — MotoWave</title>
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem("motowave-theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="/motowave-site/assets/site.css">
+  <script defer src="/motowave-site/assets/theme.js"></script>
+</head>
+<body>
+  <main class="error-page">
+    <div class="error-card">
+      <p class="eyebrow">404</p>
+      <h1>Page not found</h1>
+      <p>The page you were looking for does not exist or has moved.</p>
+      <a class="button button-primary" href="/motowave-site/">Back to MotoWave</a>
+      <button class="theme-toggle error-theme-toggle" type="button" aria-label="Theme: System. Switch to light theme.">◐ System</button>
+    </div>
+  </main>
+</body>
+</html>
